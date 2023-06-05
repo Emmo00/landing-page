@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JavaMaster</title>
   </head>
   <body>
     <header>
-      <h1 class="logo">JavaMaster</h1>
+      <h1 class="logo"><a href="#main">JavaMaster</a></h1>
       <nav>
         <ul>
           <li><a href="#menu">Menu</a></li>
@@ -17,26 +18,40 @@
         </ul>
       </nav>
     </header>
-    <section id="main">
+    <section id="main" class="main-section">
       <div class="hero">
-        <div class="hero-text">This is the Hero Text</div>
+        <div class="hero-text">Coffee shop website.</div>
         <p>
-          Some other text about the website, under the hero text too.Some other
-          text about the website, under the hero text too.Some other text about
-          the website, under the hero text too.
+          Indulge in the aroma of freshly brewed perfection and savor the
+          artistry in every sip. Discover a world where passion meets
+          craftsmanship, where coffee becomes an experience.
         </p>
-        <button>Buy One NOW</button>
+        <button class="btn">Buy One NOW</button>
       </div>
       <div class="hero-image">
-        <img src="images/#" alt="JavaMaster" />
+        <img src="images/coffee1.jpg" alt="JavaMaster" />
       </div>
     </section>
     <section id="menu" class="menu">
       <h3>Check out some of the Javas on our menu.</h3>
-      <img src="images/#" alt="menu item" />
-      <img src="images/#" alt="menu item" />
-      <img src="images/#" alt="menu item" />
-      <img src="images/#" alt="menu item" />
+      <div class="coffee-menu">
+        <div class="menu-item">
+          <img src="images/affogato.jpg" alt="Affogato" />
+          <p>Affogato</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/Cappuccino.jpg" alt="Cappuccino" />
+          <p>Cappuccino</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/espresso.jpg" alt="espresso" />
+          <p>Espresso</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/iced-americano.jpg" alt="iced americano" />
+          <p>Iced Americano</p>
+        </div>
+      </div>
       <a href="#">See more...</a>
     </section>
     <section class="quote" id="about">
@@ -48,10 +63,13 @@
       </p>
     </section>
     <section class="rapid-action">
-        <div><p>Be our customer</p><button>Buy one NOW</button></div>
+      <div>
+        <p>Be our customer</p>
+        <button class="btn">Buy one NOW</button>
+      </div>
     </section>
     <footer>
-        <div><p>&copy; Emmanuel 2023</p></div>
+      <div><p>&copy; Emmanuel 2023</p></div>
     </footer>
   </body>
 </html>
