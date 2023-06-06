@@ -103,7 +103,7 @@ header a {
 .see-more:hover {
     text-decoration: underline;
 }
-/* continue */
+
 .quote {
     background-color: #E98D58;
 }
@@ -113,6 +113,20 @@ header a {
     font-weight: 300;
     color:#482C19;
     padding: 50px 10px;
+}
+
+.card {
+    margin: 60px 0;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #E98D58;
+    display: flex;
+}
+.card div {
+    flex: 1;
+}
+.card button {
+    background-color: #482C19;
 }
 footer {
     background-color: #482C19;
