@@ -78,6 +78,7 @@ header a {
     text-align: center;
 }
 .coffee-menu {
+    margin-top: 50px;
     padding: 16px 0;
     display: flex;
     justify-content: space-around;
@@ -90,6 +91,18 @@ header a {
 .menu-item img {
     border-radius: 9px;
 }
+.menu-item p {
+    color:#482C19;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.see-more {
+    color: #482C19;
+    font-size: large;
+}
+.see-more:hover {
+    text-decoration: underline;
+}
 /* continue */
 .quote {
     background-color: #E98D58;
@@ -99,6 +112,7 @@ header a {
     font-style: italic;
     font-weight: 300;
     color:#482C19;
+    padding: 50px 10px;
 }
 footer {
     background-color: #482C19;
