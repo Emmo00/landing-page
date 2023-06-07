@@ -173,6 +173,9 @@ footer {
     .main-section {
         flex-direction: column;
     }
+    nav ul {
+        gap: 20px;
+    }
     .hero {
         padding: 0;
     }
