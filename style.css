@@ -12,7 +12,9 @@ a {
 }
 
 header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
+    font-family: cursive;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
@@ -20,7 +22,7 @@ header {
     color: #F5EEDB;
 }
 .logo {
-    font-size: 24px;
+    font-size: 30px;
 }
 nav ul {
     list-style-type: none;
@@ -28,6 +30,10 @@ nav ul {
     justify-content: space-between;
     gap: 12px;
     margin-right: 12px;
+    font-size: 20px;
+}
+nav a:hover {
+    border-bottom: 4px dotted #E98D58;
 }
 header a {
     color: #F5EEDB;
@@ -35,12 +41,14 @@ header a {
 .main-section {
     background-color: #482C19;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color:#F5EEDB;
 }
 .hero {
-    padding-right: 20px;
+    padding-right: 200px;
+    font-family: cursive;
+    padding-bottom: 100px;
 }
 .hero-text, .hero p, .hero .btn {
     margin: 6px 0;
@@ -58,6 +66,8 @@ header a {
     background-color: #E98D58;
     border: none;
     padding: 10px 20px;
+    font-family: cursive;
+    border-radius: 5px;
 }
 .hero, .hero-image {
     flex: 1;
@@ -65,10 +75,17 @@ header a {
 .hero-image {
     padding: 5% 0;
 }
+.hero-image img {
+    border-radius: 10px;
+}
+.hero-image img:hover {
+    transform: scale(110%);
+}
 
 .menu {
     padding-top: 30px;
     padding-bottom: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 .menu h3 {
@@ -90,6 +107,9 @@ header a {
 }
 .menu-item img {
     border-radius: 9px;
+}
+.menu-item:hover {
+    transform: scale(110%);
 }
 .menu-item p {
     color:#482C19;
@@ -117,17 +137,51 @@ header a {
 
 .card {
     margin: 60px 0;
-    padding: 20px 20px;
+    padding: 40px 40px;
     border-radius: 5px;
-    background-color: #E98D58;
+    background-color: #482C19;
     display: flex;
+    color: #F5EEDB;
+    font-size: 110%;
+    font-family: cursive;
 }
 .card div {
     flex: 1;
 }
 .card button {
+    border: 2px solid #F5EEDB;
+    color: #482C19;
+}
+.card button:hover {
     background-color: #482C19;
+    color: #F5EEDB;
 }
 footer {
+    display: flex;
     background-color: #482C19;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #F5EEDB;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+    .main-section {
+        flex-direction: column;
+    }
+    .hero {
+        padding: 0;
+    }
+    .coffee-menu {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .card {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
